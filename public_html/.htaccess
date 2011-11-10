@@ -3,7 +3,6 @@
 
     RewriteEngine On
     #RewriteBase /php/zonoise-silex/public_html
-    RewriteBase /zonoise-silex/public_html
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [QSA,L]
 </IfModule>
