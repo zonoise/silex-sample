@@ -7,8 +7,8 @@ $app['debug'] = true;
 
 //Register Twig Extension
 $app->register(new Silex\Provider\TwigServiceProvider(),array(
-  'twig.path'           => __DIR__.'/views' ,
-  'twig.class_path' => __DIR__.'/vender/Twig/lib'
+  'twig.path'           => __DIR__.'/../views' ,
+  'twig.class_path' => __DIR__.'/../vender/Twig/lib'
 ));
 
 $app->get('/', function() use($app) { 
